@@ -131,18 +131,19 @@ input, button {
 }
 .home-title, .home-value-number {
     color: var(--body-color);
-    font-family: var(--title-font);
 }
 .home-title {
     font-size: var(--biggest-fonbot-size);
     line-height: 120%;
     margin-bottom: 1.25rem;
+    font-family: var(--title-font);
 }
 .home-description {
     color:  var(--text-lighter);
     margin-bottom: 2rem;
     line-height: 140%;
     font-size: var(--h2-text);
+    max-width: 600px;
 }
 .home-search {
     background-color: var(--body-color);
