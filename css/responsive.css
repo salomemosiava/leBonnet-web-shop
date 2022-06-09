@@ -320,6 +320,9 @@
     .nav-link {
         color: var(--secondary);
     }
+    .nav-link:hover {
+        color: var(--primary);
+    }
     .nav-link i{
         display: none;
     }
