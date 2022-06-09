@@ -520,7 +520,7 @@ input, button {
     font-size: var(--smaller-font-size);
 }
 .contact-card-button, #loadprev, #loadmore {
-    font-size: var(--small-font-size);
+    font-size: var(--body-font-size);
     padding: 14px 0;
     width: 100%;
     border-radius: .25rem;
@@ -851,9 +851,9 @@ gap: 4.5rem;
     padding: 0.5rem 0.5rem;
     position: absolute;
     bottom: 0;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     width: 100%;
-    opacity: 80%;
+    opacity: 70%;
 }
 
 .li-user:hover {
