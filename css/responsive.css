@@ -153,9 +153,11 @@
   top: 2rem;
 }
 .nav-link {
-  font-size: var(--body-font);
-  text-decoration: none;
-  text-transform: uppercase;
+  color: black;
+  transition: 0.5s;
+}
+.nav-link:hover {
+    color: var(--primary-color);
 }
 .nav-menu:after {
   height: 100%;
@@ -168,10 +170,7 @@
   transition: all .6s ease;
   width: 100%;
 }
-.nav-menu.open:after {
-  opacity: 0.65;
-  height: 100%;
-}
+
 .b-menu {
     cursor: pointer;
     display: block;
