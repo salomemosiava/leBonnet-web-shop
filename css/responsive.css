@@ -232,6 +232,10 @@
   .nav-button {
       display: none;
   }
+  .footer-content{
+      display: flex;
+      flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 576px) {
