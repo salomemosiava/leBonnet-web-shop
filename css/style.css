@@ -580,9 +580,13 @@ input, button {
     line-height: 2.5rem;
     color: var(--primary-color);
     background-color: var(--body-color);
+    -webkit-transition: 0.7s;
+        -o-transition: 0.7s;
+            transition: 0.7s;
     padding: 2rem;
     -webkit-box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    
 }
 .slider-title:hover {
     background-color: var(--primary-color);
