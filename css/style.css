@@ -738,6 +738,9 @@ footer {
     gap: 2.5rem;
     row-gap: 2.5rem;
 }
+.footer-container img{
+    display: none;
+}
 .footer-description,
 .footer-link {
     font-size: var(--small-font-size);
@@ -754,6 +757,7 @@ footer {
 .footer-links {
     display: -ms-grid;
     display: grid;
+    flex-wrap: wrap;
 }
 .footer-content {
 display: -webkit-box;

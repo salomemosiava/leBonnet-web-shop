@@ -74,9 +74,6 @@
     }
 
 @media (max-width: 400px) {
-    .footer-container img{
-        display: none;
-    }
     .container {
         margin-left: 1rem;
         margin-right: 1rem;
@@ -232,10 +229,6 @@
   .nav-button {
       display: none;
   }
-  .footer-content{
-      display: flex;
-      flex-wrap: wrap;
-  }
 }
 
 @media (min-width: 576px) {
@@ -292,7 +285,7 @@
         grid-template-columns: repeat(2, -webkit-max-content);
         grid-template-columns: repeat(2, max-content);
     }
-    .footer-description {
+    .footer-description, .footer-container img{
         display: block;
     }
 }
