@@ -611,7 +611,6 @@ input, button {
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    z-index: 100;
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
