@@ -81,6 +81,7 @@ function createATag (item) {
   let aTag = document.createElement('a');
   aTag.setAttribute('href', item.url);
   aTag.classList.add('slider-a');
+  aTag.setAttribute("target", "_blank");
 
   return aTag;
 }
