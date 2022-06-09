@@ -155,7 +155,6 @@
 .nav-link {
   font-size: var(--body-font);
   text-decoration: none;
-  color: var(--primary-color);
   text-transform: uppercase;
 }
 .nav-menu:after {
@@ -169,7 +168,10 @@
   transition: all .6s ease;
   width: 100%;
 }
-
+.nav-menu.open:after {
+  opacity: 0.65;
+  height: 100%;
+}
 .b-menu {
     cursor: pointer;
     display: block;
@@ -231,14 +233,14 @@
   .nav-button {
       display: none;
   }
-
+}
 
 @media (min-width: 576px) {
     .contact-card {
-        --ms-grid-columns: (192px)[2];
+        -ms-grid-columns: (192px)[2];
         grid-template-columns: repeat(2, 192px);
-        --webkit-box-pack: center;
-            --ms-flex-pack: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
                 justify-content: center;
     }
 
