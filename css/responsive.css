@@ -74,6 +74,9 @@
     }
 
 @media (max-width: 400px) {
+    .footer-container img{
+        display: none;
+    }
     .container {
         margin-left: 1rem;
         margin-right: 1rem;
