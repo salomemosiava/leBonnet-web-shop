@@ -6,7 +6,7 @@
 */
 
 /* Resposive Typography*/
-@media (max-width: 1024px) and (min-width: 350px) {
+@media (max-width: 1024px) and (min-width: 400px) {
     :root {
         --biggest-font-size: 4rem;
         --h1-text:  2.25rem;
@@ -64,9 +64,16 @@
     .b-container {
         display: none;
     }
+    .container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .home-search {
+        width: 90%;
+    }
     }
 
-@media (max-width: 350px) {
+@media (max-width: 400px) {
     .container {
         margin-left: 1rem;
         margin-right: 1rem;
@@ -253,9 +260,6 @@
   }
 }
 @media (min-width: 576px) {
-    .home-search {
-        width: 412px;
-    }
     .contact-card {
         -ms-grid-columns: (192px)[2];
         grid-template-columns: repeat(2, 192px);
