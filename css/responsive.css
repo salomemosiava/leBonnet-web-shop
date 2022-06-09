@@ -1,0 +1,471 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+/* Resposive Typography*/
+@media (max-width: 1024px) and (min-width: 350px) {
+    :root {
+        --biggest-font-size: 4rem;
+        --h1-text:  2.25rem;
+        --h2-text: 1.5rem;
+        --h3-text: 1.25rem;
+        --body-font-size: 1rem;
+        --small-font-size: 0.875rem;
+        --smaller-font-size: 0.813rem;
+    }
+    .nav-menu {
+        position: fixed;
+        bottom: 2rem;
+        background-color: var(--primary-color);
+        -webkit-box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        width: 90%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding: 1.3rem 3rem;
+        border-radius: 1.25rem;
+        -webkit-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s;
+        z-index: var(--z-index);
+    }
+    .nav-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center
+    }
+    .nav-link {
+        color: var(--body-color);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: .5rem;
+        border-radius: 50%;
+    }
+    .nav-link i {
+        font-size: 1.25rem;
+    }
+    .nav-link span {
+        display: none;
+    }
+    .account-container {
+        padding: 1rem 0 0 0;
+    }
+    .b-container {
+        display: none;
+    }
+    }
+
+@media (max-width: 350px) {
+    .container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .section {
+        padding: 3.5rem 0 1rem;
+    }
+    .home {
+        padding-bottom: 0;
+    }
+    .container-card {
+        -ms-grid-columns: (180px)[1];
+        grid-template-columns: repeat(1, 180px);
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .nav-menu {
+        padding: 1.3rem 1.5rem;
+    }
+    .home-value {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1rem 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .home-image, .info-image, .contact-image {
+        width: 220px;
+        height: 280px;
+    }
+    .shop-card {
+        width: 230px;
+        padding: 0.5rem 0.5rem 0.75rem;
+    }
+
+    .account-title {
+        display: none;
+    }
+    .footer-content {
+        gap: 2.5rem;
+    }
+    .info-image, .home-image, .contact-image{
+        margin: o auto;
+        width: 100%;
+    }
+/* Burger */
+.nav-menu {
+    background-color: var(--body-color);
+    display: none;
+}
+.nav-menu.open, .nav-menu:after {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+.nav-item {
+    margin: 1.5rem 0.5rem;
+}
+.nav-link i {
+    display: none;
+}
+.nav-menu, .nav-menu:after {
+  position: absolute;
+  right: 0;
+  top: 2rem;
+}
+.nav-link {
+  font-size: var(--body-font);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate3d(345px, 0, 0);
+    transform: translate3d(345px, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate3d(345px, 0, 0);
+    transform: translate3d(345px, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+}
+.nav-menu:after {
+  content: '';
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  padding: 0;
+  top: 0;
+  -webkit-transition: all .6s ease;
+  -o-transition: all .6s ease;
+  transition: all .6s ease;
+  width: 100%;
+}
+.nav-menu.open:after {
+  z-index: 10;
+  opacity: 0.65;
+  height: 100%;
+}
+.b-menu {
+    cursor: pointer;
+    display: block;
+    height: 66px;
+    padding-top: 20px;
+    position: relative;
+    top: -20px;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 43px;
+    z-index: 12;
+    right: 10px;
+  }
+  .b-bun--bottom, .b-bun--mid, .b-bun--top {
+    height: 2px;
+    width: 25px;
+  }
+  .b-container.open .b-main, .b-bun {
+    background: var(--primary-color);
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease
+  }
+  .b-bun {
+    position: relative;
+    --webkit-transition: all .4s ease;
+  }
+  .b-bun--top {
+    top: 0
+  }
+  .b-bun--mid {
+    top: 8px
+  }
+  .b-bun--bottom {
+    top: 16px
+  }
+  .b-container {
+    position: absolute;
+    right: 0;
+    top: 20px;
+  }
+  .b-container.open .b-bun--top {
+    background: var(--primary-color);
+    top: 9px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+  }
+  .b-container.open .b-bun--mid {
+    opacity: 0
+  }
+  .b-container.open .b-bun--bottom {
+    background: var(--primary-color);
+    top: 5px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+  }
+  .nav-button {
+      display: none;
+  }
+}
+@media (min-width: 576px) {
+    .home-search {
+        width: 412px;
+    }
+    .contact-card {
+        -ms-grid-columns: (192px)[2];
+        grid-template-columns: repeat(2, 192px);
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .account-title {
+        font-size: var(--h2-text);
+    }
+    
+}
+@media (min-width: 768px) {
+    .home-container {
+        -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 2rem;
+    }
+    .home-image, .info-image {
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+    }
+    .home-data {
+        padding-bottom: 2rem;
+    }
+    .info-container,
+    .contact-container {
+        -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-image {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+    }
+    .contact-card {
+        -webkit-box-pack: initial;
+            -ms-flex-pack: initial;
+                justify-content: initial;
+    }
+    .account-container {
+        padding: 3rem 13rem;
+    }
+    .footer-container {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -ms-grid-columns: (-webkit-max-content)[2];
+        -ms-grid-columns: (max-content)[2];
+        grid-template-columns: repeat(2, -webkit-max-content);
+        grid-template-columns: repeat(2, max-content);
+    }
+    .footer-description {
+        display: block;
+    }
+}
+@media (min-width: 1023px) {
+    .section {
+        padding: 4.5rem 0 1rem;
+    }
+    .section-title {
+        font-size: 2.5rem;
+    }
+    .section-subtitle {
+        font-size: var(--body-font-size);
+        margin-bottom: 1rem;
+    }
+    .nav {
+        height: calc(var(--header-height) + 1.5rem);
+    }
+    .nav-menu {
+        width: initial;
+    }
+    .nav-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-column-gap: 3rem;
+           -moz-column-gap: 3rem;
+                column-gap: 3rem;
+    }
+    .nav-link {
+        color: var(--secondary);
+    }
+    .nav-link i{
+        display: none;
+    }
+    .nav-button {
+        display: inline-block;
+    }
+    .nav-link {
+        color: black
+    }
+
+    .home {
+        padding-bottom: 0;
+    }
+    .home-container {
+        padding-top: 5rem;
+        -webkit-column-gap: 2rem;
+           -moz-column-gap: 2rem;
+                column-gap: 2rem;
+    }
+    .home-data {
+        padding-bottom: 4rem;
+        font-size: 1.5rem;
+    }
+    .home-title {
+        margin-bottom: 2rem;
+    }
+    .home-description, .home-search {
+        margin-bottom: 3rem;
+    }
+    .home-value-number {
+        font-size: 3rem;
+    }
+    .home-value-description{
+        font-size: 1.2rem;
+    }
+    .home-shape, .info-shape, .contact-shape {
+        width: 504px;
+        height: 611px;
+        border-radius: 256px 256px 0 0;
+    }
+    .home-img, .info-img, .contact-img {
+        width: 472px;
+        height: 634px;
+        border-radius:236px 236px 12px 12px;
+        bottom: -2.5rem;
+    }
+    .home-img img, .info-img img, .contact-img img {
+        max-width: initial;
+        width: 510px;
+    } 
+    .shop-container {
+        padding-top: 3rem;
+    }
+    .shop-card{
+        width: 320px;
+        padding: 0.75rem 0.75rem 2rem;
+    }
+    .shop-data {
+        padding: 0 0.25rem 0 0.75rem;
+    }
+    .info-container, .contact-container {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-column-gap: 5rem;
+           -moz-column-gap: 5rem;
+                column-gap: 5rem;
+    }
+    .info-description, .contact-description {
+        font-size: var(--body-font);
+        margin-bottom: 2.5rem;
+    }
+    .info-accordion {
+        font-size: var(--body-font);
+    }
+    .info-accordion-item {
+        padding: 1.25rem;
+    }
+    .info-accordion-description {
+        padding-bottom: 1rem;
+        font-size: var(--small-font-size);
+    }
+    .contact-card {
+        -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+    }
+    .contact-card-box {
+        padding: 28px 1.5rem 1.5rem;
+    }
+    .account-container {
+        padding: 4rem 10rem 4.5rem;
+        border-radius: 2rem;
+    }
+    .account-title {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .account-description {
+        font-size: var(--body-font-size);
+        padding: 0 8rem;
+    }
+    .account-button {
+        font-size: var(--body-font-size);
+    }
+
+    .footer-title {
+        margin-bottom: 1.5rem;
+    }
+    .footer-links {
+        row-gap: 1rem;
+    }
+    .footer-info {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding-bottom: 2rem;
+    }
+    #username, #email, #password, #password2, .input {
+        font-size: var(--body-font-size);
+    }
+    .b-container {
+        display: none;
+    }
+}
