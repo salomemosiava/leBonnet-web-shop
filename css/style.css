@@ -546,7 +546,6 @@ input, button {
 }
 .account-container {
     background-color: var(--primary-color);
-    border-radius: 1.25rem;
     border: none;
     text-align: center;
 }
