@@ -831,7 +831,7 @@ gap: 4.5rem;
             justify-content: center;
     list-style: none;
     width: 100%;
-    margin: 2rem auto;
+    margin: 1rem auto;
     gap: 2rem;
 }
 
@@ -861,6 +861,8 @@ gap: 4.5rem;
         -ms-transform: scale(1.1);
             transform: scale(1.1);
     background-color: var(--body-color);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        box-shadow: rgba(172, 44, 44, 0.45) 0px 25px 20px -20px;
 }
 
 
@@ -881,5 +883,5 @@ gap: 4.5rem;
     gap: 1.5rem;
     max-width: 1000px;
     width: 100%;
-    margin: 0.25rem auto;
+    margin: 4rem auto;
 }
