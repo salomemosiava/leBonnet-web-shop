@@ -301,11 +301,11 @@
         padding: 3rem 13rem;
     }
     .footer-container {
-        -webkit-box-pack: justify;
+        --webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        -ms-grid-columns: (-webkit-max-content)[2];
-        -ms-grid-columns: (max-content)[2];
+        --ms-grid-columns: (-webkit-max-content)[2];
+        --ms-grid-columns: (max-content)[2];
         grid-template-columns: repeat(2, -webkit-max-content);
         grid-template-columns: repeat(2, max-content);
     }

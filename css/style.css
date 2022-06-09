@@ -846,7 +846,7 @@ gap: 4.5rem;
     color: var(--body-color);
 }
 .li-user p {
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 .li-user:hover {
